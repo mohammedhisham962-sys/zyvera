@@ -1,0 +1,17 @@
+import os
+import re
+
+filepath = "index.html"
+if os.path.exists(filepath):
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    matches = re.finditer(r'geminiApiKey', content, re.IGNORECASE)
+    print("Matches for 'geminiApiKey':")
+    for m in matches:
+        start = max(0, m.start() - 150)
+        end = min(len(content), m.end() + 150)
+        print(f"[{m.start()}]: {content[start:end]}")
+        print("-" * 50)
+else:
+    print(f"File {filepath} not found.")

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYVERA Cyber Academy | Institute of Threat Defense & Intelligence</title>
+    <meta name="description" content="Accredited Cybersecurity Institute & Threat Laboratory featuring hands-on technical labs, diagnostic reconnaissance suites, MITRE ATT&CK intelligence, and real-time SOC incident operations.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans, Outfit, Newsreader, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        milk: {
+                            50: '#FAF7F2',
+                            100: '#F4EFEA',
+                            200: '#E8DFD5',
+                            300: '#D9CEBF',
+                        },
+                        plum: {
+                            50: '#F6EEF7',
+                            100: '#EFE2F1',
+                            200: '#DEC0E1',
+                            300: '#C79BC9',
+                            400: '#9C4D9F',
+                            500: '#7B287D',
+                            600: '#6B216D',
+                            700: '#521854',
+                            800: '#4A154B',
+                            900: '#370E38',
+                            950: '#221224',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                        serif: ['Newsreader', 'Georgia', 'serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Milk & Plum Editorial Design System CSS -->
+    <link rel="stylesheet" href="/src/css/main.css">
+
+    <!-- React 18 & Babel Standalone CDNs -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- jsQR Library for Camera Threat Scanner -->
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+</head>
+<body class="min-h-screen transition-colors duration-200">
+    <!-- React Root Mount Point -->
+    <div id="root"></div>
+
+    <!-- Main React Application Script -->
+    <script type="text/babel" src="/src/js/app_react.js"></script>
+</body>
+</html>
